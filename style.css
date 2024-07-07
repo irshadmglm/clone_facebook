@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+    font-family: sans-serif;
 }
 nav{
     width: 100%;
@@ -8,20 +9,24 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.15);
     border-bottom: 1px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 nav .left{
     display: flex;
     align-items: center;
-    margin: 10px;
+   padding-left: 10px;
+   width: 25%;
     
 }
-.logo i{
+nav .logo i{
     font-size: 40px;
     padding: 5px;
 }
-.left .search-bar{
+nav .left .search-bar{
     width: 250px;
     height: 40px;
     background-color: rgb(231, 232, 234);
@@ -29,12 +34,12 @@ nav .left{
     display: flex;
     align-items: center;
 }
-.left .search-bar i{
+nav .left .search-bar i{
     padding-left: 10px;
     color: rgb(99, 99, 99);
     font-size: 17px;
 }
-.left .search-bar input{
+nav .left .search-bar input{
     background: transparent;
     outline: none;
     border: 0;
@@ -44,30 +49,35 @@ nav .left{
 nav .center{
     display: flex;
     align-items: center;
+    width: 50%;
+    margin-left: 10%;
 }
-.center div{
-    width: 110px;
+nav .center div{
+    width: 17%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    cursor: pointer;
 }
-.center div:hover{
+nav .center div:hover{
     background-color: rgb(240, 237, 237);
 }
 
-.center i{
+nav .center i{
     font-size: 20px;
     color: rgb(87, 87, 86);
 }
+
 nav .right{
     display: flex;
     align-items: center;
     padding-right: 30px;
+    width: 25%;
 
 }
-.right div{
+nav .right div{
     width: 40px;
     height: 40px;
     display: flex;
@@ -76,18 +86,326 @@ nav .right{
     border-radius: 50%;
     background-color: rgb(220, 220, 220);
     margin-left: 10px;
+    cursor: pointer;
 }
-.right  i{
+nav .right img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+nav .right  i{
     font-size: 20px;
     
 }
-.right div:hover{
+nav .right div:hover{
     border-radius: 50%;
     background-color: rgb(219, 216, 216);
 }
 
 main{
     width: 100%;
-    height: 500px;
-    background-color: rgba(235, 232, 232, 0.933);
+    background-color: rgba(239, 240, 241, 0.96);
+    display: flex;
+    
+}
+main .left{
+    width: 25%;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 54px;
+    padding: 5px;
+   
+}
+main .left::-webkit-scrollbar{
+    width: 7px;
+}
+main .left::-webkit-scrollbar-thumb{
+border-radius: 20px;
+background-color: #f5f5f5;
+}
+main .left:hover::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+}
+main .left .img{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+main .left .img:hover{
+    background-color: #cccccc;
+}
+main .left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+main .center{
+    width: 50%;
+   margin-left: 6%;
+
+    
+}
+main .center .stories{
+    width: 75%;
+    margin-top: 70px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2px;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+main .center .stories .story{
+    width: 134px;
+    height: 230px;
+    background-color: aqua;
+    box-shadow: 1px 1px 4px 1px rgb(197, 197, 197);
+    border-radius: 20px;
+    cursor: pointer;
+}
+main .center .stories .story .st{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    
+   
+}
+main .center .stories .profile img{
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid rgb(0, 140, 255);
+}
+main .center .stories .profile {
+    z-index: 2;
+    width: 5px;
+    border-radius: 50%;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+main .center .stories::-webkit-scrollbar{
+    height: 7px;
+}
+main .center .stories::-webkit-scrollbar-thumb{
+border-radius: 20px;
+background-color: #f5f5f5;
+}
+main .center .stories:hover::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+}
+
+main .center .input-div{
+    width: 73%;
+    height: 90px;
+    background: #ffffff;
+    display: grid;
+    row-gap: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    grid-template-areas: "comment comment comment"
+                          "live photo feeling";
+
+}
+main .center .input-div .comment{
+    grid-area: comment;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+main .center .input-div .live{
+    grid-area: live;
+}
+
+main .center .input-div .photo{
+    grid-area: photo;
+}
+
+main .center .input-div .feeling{
+    grid-area: feeling;
+}
+main .center .input-div .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+}
+main .center .input-div .item:hover{
+    background-color: #eae8e8;
+    border-radius: 10px;
+}
+main .center .input-div img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+main .center .input-div .search-bar{
+ width: 80%;
+ height: 40px;
+ background-color: rgb(231, 232, 234);
+ border-radius: 30px;
+ display: flex;
+ align-items: center;
+ padding-left: 10px;
+ 
+}
+main .center .input-div .search-bar:hover{
+    background-color: #e1e1e1;
+}
+main .center .input-div .search-bar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+main .center .post{
+    width: 75%;
+    margin-top: 20px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+main .center .post .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    
+}
+main .center .post .head .profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .center .post .head .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+main .center .post .head .profile p{
+    
+    font-size: small;
+}
+main .center .post .head .icons i{
+ font-size: 25px;
+}
+main .center .post .image img {
+    width: 100%; 
+    border: 1px solid rgb(199, 197, 197);
+   
+}
+main .center .post .like{
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .center .post .like img{
+ width: 20px;
+ height: 20px;
+
+}
+main .center .post .like div{
+    display: flex;
+    padding: 0 10px 0 10px ;
+}
+main .center .post .like divp{
+    font-size: smaller;
+    
+}
+main .center .post .footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+main .center .post .footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+
+}
+main .center .post .footer div img{
+    width: 25px;
+    height: 25px;
+}
+main .center .post .footer div p{
+    color: #7a7a7a;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 15px;
+}
+main .center .knownfrinds{
+    width: 75%;
+    margin-top: 20px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+   
+}
+main .center .knownfrinds .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .center .knownfrinds .head div{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+main .center .knownfrinds .footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .center .knownfrinds .footer div{
+    margin-bottom: 10px;
+    height: 30px;
+     width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main .center .knownfrinds .footer div:hover{
+    background-color: #e1e1e1;
+    border-radius: 8px;
+}
+
+main .center .knownfrinds .peoples{
+    display: flex;
+    
+}
+main .center .knownfrinds .people{
+    width: 30%;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(173, 172, 172);
+    color: #000;
+    overflow: hidden;
+}
+main .center .knownfrinds .people img{
+    width: 100%;
+    
+    
 }
