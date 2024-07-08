@@ -20,6 +20,7 @@ nav .left{
     align-items: center;
    padding-left: 10px;
    width: 25%;
+  
     
 }
 nav .logo i{
@@ -73,6 +74,7 @@ nav .center i{
 nav .right{
     display: flex;
     align-items: center;
+    justify-content: end;
     padding-right: 30px;
     width: 25%;
 
@@ -84,9 +86,12 @@ nav .right div{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(236, 235, 235);
     margin-left: 10px;
     cursor: pointer;
+}
+nav .right div:hover{
+    background-color: rgb(219, 217, 217);
 }
 nav .right img{
     width: 35px;
@@ -97,6 +102,16 @@ nav .right img{
 nav .right  i{
     font-size: 20px;
     
+}
+nav .right p{
+    position: relative;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 35%;
+    color: white;
+    padding: 3px;
+    bottom: 8px;
+    right: 67px;
 }
 nav .right div:hover{
     border-radius: 50%;
@@ -116,7 +131,7 @@ main .left{
     overflow-y: scroll;
     margin-top: 54px;
     padding: 5px;
-   
+    position: fixed;
 }
 main .left::-webkit-scrollbar{
     width: 7px;
@@ -145,7 +160,7 @@ main .left img{
 }
 main .center{
     width: 50%;
-   margin-left: 6%;
+   margin-left: 32%;
 
     
 }
@@ -344,6 +359,7 @@ main .center .post .footer div img{
 main .center .post .footer div p{
     color: #7a7a7a;
 }
+
 hr{
     border: 0;
     height: 1px;
@@ -392,20 +408,111 @@ main .center .knownfrinds .footer div:hover{
 }
 
 main .center .knownfrinds .peoples{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-bottom: 10px;
     
 }
+main .center .knownfrinds .peoples .closs-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 25px;
+    top: 15px;
+    left: 140px;
+    background-color: #838080;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .center .knownfrinds .peoples .closs-btn:hover{
+    opacity: 0.9;
+}
 main .center .knownfrinds .people{
-    width: 30%;
+    width: 150px;
     height: 250px;
-    margin-right: 10px;
+   
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(173, 172, 172);
-    color: #000;
-    overflow: hidden;
+    box-shadow: 1px 1px 2px 1px rgb(197, 197, 197);
+    margin-bottom: 10px;
 }
 main .center .knownfrinds .people img{
     width: 100%;
+}
+main .right{
+    width: 22%;
+    margin-top: 65px;
+    position: fixed;
+    left: 78%;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 92vh
+}
+main .right::-webkit-scrollbar{
+    width: 7px;
+}
+main .right::-webkit-scrollbar-thumb{
+border-radius: 20px;
+background-color: #f5f5f5;
+}
+main .right:hover::-webkit-scrollbar-thumb{
+    background-color: #cccccc;
+}
+main .right .brithday{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+main .right .brithday img {
+    margin-right: 10px;
+}
+main .right .contacts-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 10px 10px 5px;
+}
+main .right .contact{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     
-    
+    padding: 8px;
+}
+main .right .contact:hover{
+    background-color: #e1e1e1;
+    border-radius: 8px;
+}
+main .right .contact img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(109, 108, 108);
+}
+main .right .contact strong{
+    color: rgb(9, 156, 9);
+    position: relative;
+    top: 6px;
+    right: 6px;
+    font-size: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+main .right .group-creation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+main .right .group-creation div{
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
