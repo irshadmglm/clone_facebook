@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0%;
-    font-family: sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-nav{
+
+nav {
     width: 100%;
     height: 54px;
     display: flex;
@@ -15,19 +16,21 @@ nav{
     top: 0;
     z-index: 10;
 }
-nav .left{
+
+nav .left {
     display: flex;
     align-items: center;
-   padding-left: 10px;
-   width: 25%;
-  
-    
+    padding-left: 10px;
+    width: 25%;
 }
-nav .logo i{
+
+nav .logo i {
     font-size: 40px;
     padding: 5px;
+    color: #0273ca;
 }
-nav .left .search-bar{
+
+nav .left .search-bar {
     width: 250px;
     height: 40px;
     background-color: rgb(231, 232, 234);
@@ -35,25 +38,29 @@ nav .left .search-bar{
     display: flex;
     align-items: center;
 }
-nav .left .search-bar i{
+
+nav .left .search-bar i {
     padding-left: 10px;
     color: rgb(99, 99, 99);
     font-size: 17px;
 }
-nav .left .search-bar input{
+
+nav .left .search-bar input {
     background: transparent;
     outline: none;
     border: 0;
     width: 200px;
 
 }
-nav .center{
+
+nav .center {
     display: flex;
     align-items: center;
     width: 50%;
     margin-left: 10%;
 }
-nav .center div{
+
+nav .center div {
     width: 17%;
     height: 50px;
     display: flex;
@@ -61,17 +68,20 @@ nav .center div{
     justify-content: center;
     border-radius: 10px;
     cursor: pointer;
-}
-nav .center div:hover{
-    background-color: rgb(240, 237, 237);
+
 }
 
-nav .center i{
+nav .center div:hover {
+    background-color: rgb(240, 237, 237);
+
+}
+
+nav .center i {
     font-size: 20px;
     color: rgb(87, 87, 86);
 }
 
-nav .right{
+nav .right {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -79,7 +89,8 @@ nav .right{
     width: 25%;
 
 }
-nav .right div{
+
+nav .right div {
     width: 40px;
     height: 40px;
     display: flex;
@@ -90,20 +101,24 @@ nav .right div{
     margin-left: 10px;
     cursor: pointer;
 }
-nav .right div:hover{
+
+nav .right div:hover {
     background-color: rgb(219, 217, 217);
 }
-nav .right img{
+
+nav .right img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     cursor: pointer;
 }
-nav .right  i{
+
+nav .right i {
     font-size: 20px;
-    
+
 }
-nav .right p{
+
+nav .right p {
     position: relative;
     font-size: 10px;
     background-color: red;
@@ -113,18 +128,21 @@ nav .right p{
     bottom: 8px;
     right: 67px;
 }
-nav .right div:hover{
+
+nav .right div:hover {
     border-radius: 50%;
     background-color: rgb(219, 216, 216);
+
 }
 
-main{
+main {
     width: 100%;
     background-color: rgba(239, 240, 241, 0.96);
     display: flex;
-    
+
 }
-main .left{
+
+main .left {
     width: 25%;
     height: 92vh;
     overflow: hidden;
@@ -133,38 +151,46 @@ main .left{
     padding: 5px;
     position: fixed;
 }
-main .left::-webkit-scrollbar{
+
+main .left::-webkit-scrollbar {
     width: 7px;
 }
-main .left::-webkit-scrollbar-thumb{
-border-radius: 20px;
-background-color: #f5f5f5;
+
+main .left::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #f5f5f5;
 }
-main .left:hover::-webkit-scrollbar-thumb{
+
+main .left:hover::-webkit-scrollbar-thumb {
     background-color: #cccccc;
 }
-main .left .img{
+
+main .left .img {
     display: flex;
     align-items: center;
     padding: 5px;
     cursor: pointer;
 }
-main .left .img:hover{
+
+main .left .img:hover {
     background-color: #cccccc;
 }
-main .left img{
+
+main .left img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     padding-right: 10px;
 }
-main .center{
-    width: 50%;
-   margin-left: 32%;
 
-    
+main .center {
+    width: 50%;
+    margin-left: 32%;
+
+
 }
-main .center .stories{
+
+main .center .stories {
     width: 75%;
     margin-top: 70px;
     display: grid;
@@ -174,7 +200,8 @@ main .center .stories{
     overflow-x: scroll;
 
 }
-main .center .stories .story{
+
+main .center .stories .story {
     width: 134px;
     height: 230px;
     background-color: aqua;
@@ -182,20 +209,23 @@ main .center .stories .story{
     border-radius: 20px;
     cursor: pointer;
 }
-main .center .stories .story .st{
+
+main .center .stories .story .st {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
-    
-   
+
+
 }
-main .center .stories .profile img{
+
+main .center .stories .profile img {
     border-radius: 50%;
     width: 30px;
     border: 2px solid rgb(0, 140, 255);
 }
+
 main .center .stories .profile {
     z-index: 2;
     width: 5px;
@@ -205,18 +235,20 @@ main .center .stories .profile {
     top: 20px;
 }
 
-main .center .stories::-webkit-scrollbar{
+main .center .stories::-webkit-scrollbar {
     height: 7px;
 }
-main .center .stories::-webkit-scrollbar-thumb{
-border-radius: 20px;
-background-color: #f5f5f5;
+
+main .center .stories::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #f5f5f5;
 }
-main .center .stories:hover::-webkit-scrollbar-thumb{
+
+main .center .stories:hover::-webkit-scrollbar-thumb {
     background-color: #cccccc;
 }
 
-main .center .input-div{
+main .center .input-div {
     width: 73%;
     height: 90px;
     background: #ffffff;
@@ -226,196 +258,250 @@ main .center .input-div{
     border-radius: 15px;
     padding: 10px;
     grid-template-areas: "comment comment comment"
-                          "live photo feeling";
+        "live photo feeling";
 
 }
-main .center .input-div .comment{
+
+main .center .input-div .comment {
     grid-area: comment;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
 }
-main .center .input-div .live{
+
+main .center .input-div .live {
     grid-area: live;
 }
 
-main .center .input-div .photo{
+main .center .input-div .photo {
     grid-area: photo;
 }
 
-main .center .input-div .feeling{
+main .center .input-div .feeling {
     grid-area: feeling;
 }
-main .center .input-div .item{
+
+main .center .input-div .item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     cursor: pointer;
 }
-main .center .input-div .item:hover{
+
+main .center .input-div .item:hover {
     background-color: #eae8e8;
     border-radius: 10px;
 }
-main .center .input-div img{
+
+main .center .input-div img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     margin-right: 10px;
 }
-main .center .input-div .search-bar{
- width: 80%;
- height: 40px;
- background-color: rgb(231, 232, 234);
- border-radius: 30px;
- display: flex;
- align-items: center;
- padding-left: 10px;
- 
+
+main .center .input-div .search-bar {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(231, 232, 234);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
 }
-main .center .input-div .search-bar:hover{
+
+main .center .input-div .search-bar:hover {
     background-color: #e1e1e1;
 }
-main .center .input-div .search-bar input{
+
+main .center .input-div .search-bar input {
     background: transparent;
     border: 0;
     outline: none;
     width: 100%;
 }
-main .center .post{
+
+
+main .center .input-div i {
+    color: #FFD43B;
+    font-size: 27px;
+    padding-right: 6px;
+}
+
+main .center .post {
     width: 75%;
     margin-top: 20px;
     height: auto;
     background-color: #ffffff;
     border-radius: 10px;
-    
+
 }
-main .center .post .head{
+
+main .center .post .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px;
-    
+
 }
-main .center .post .head .profile{
+
+main .center .post .head i {
+    color: #8d8e8f;
+}
+
+main .center .post .head .profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main .center .post .head .profile img{
+
+main .center .post .head .profile img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-main .center .post .head .profile p{
-    
+
+main .center .post .head .profile p {
+
     font-size: small;
 }
-main .center .post .head .icons i{
- font-size: 25px;
+
+main .center .post .head .icons i {
+    font-size: 25px;
 }
+
 main .center .post .image img {
-    width: 100%; 
+    width: 100%;
     border: 1px solid rgb(199, 197, 197);
-   
+
 }
-main .center .post .like{
+
+main .center .post .like {
     width: 100%;
     padding: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main .center .post .like img{
- width: 20px;
- height: 20px;
+
+main .center .post .like img {
+    width: 20px;
+    height: 20px;
 
 }
-main .center .post .like div{
+
+main .center .post .like div {
     display: flex;
-    padding: 0 10px 0 10px ;
+    padding: 0 10px 0 10px;
 }
-main .center .post .like divp{
+
+main .center .post .like divp {
     font-size: smaller;
-    
+
 }
-main .center .post .footer{
+
+main .center .post .footer {
     display: flex;
     align-items: center;
     width: 100%;
 }
-main .center .post .footer div{
+
+main .center .post .footer div {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 25%;
 
 }
-main .center .post .footer div img{
+
+main .center .post .footer div img {
     width: 25px;
     height: 25px;
 }
-main .center .post .footer div p{
+
+main .center .post .footer div p {
     color: #7a7a7a;
 }
 
-hr{
+hr {
     border: 0;
     height: 1px;
     background: #ccc;
     margin: 10px 15px;
 }
-main .center .knownfrinds{
+
+main .center .knownfrinds {
     width: 75%;
     margin-top: 20px;
     height: auto;
     background-color: #ffffff;
     border-radius: 10px;
-   
+
 }
-main .center .knownfrinds .head{
+
+main .center .knownfrinds p {
+    color: #8d8e8f;
+}
+
+main .center .knownfrinds .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-main .center .knownfrinds .head div{
+
+main .center .knownfrinds .head i {
+    color: #8d8e8f;
+}
+
+main .center .knownfrinds .head div {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     height: 40px;
     padding: 10px;
 }
-main .center .knownfrinds .footer{
+
+main .center .knownfrinds .footer {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-main .center .knownfrinds .footer div{
+
+main .center .knownfrinds .footer div {
     margin-bottom: 10px;
     height: 30px;
-     width: 95%;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
 }
 
-main .center .knownfrinds .footer div:hover{
+main .center .knownfrinds .footer div p {
+    color: #0567ca;
+}
+
+main .center .knownfrinds .footer div:hover {
     background-color: #e1e1e1;
     border-radius: 8px;
 }
 
-main .center .knownfrinds .peoples{
+main .center .knownfrinds .peoples {
     display: grid;
     grid-auto-flow: column;
     overflow: hidden;
     overflow-x: scroll;
     margin-bottom: 10px;
-    
+
 }
-main .center .knownfrinds .peoples .closs-btn{
+
+main .center .knownfrinds .peoples .closs-btn {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -429,21 +515,66 @@ main .center .knownfrinds .peoples .closs-btn{
     align-items: center;
     justify-content: center;
 }
-main .center .knownfrinds .peoples .closs-btn:hover{
+
+main .center .knownfrinds .peoples .closs-btn i {
+    color: #ffffff;
+}
+
+main .center .knownfrinds .peoples .closs-btn:hover {
     opacity: 0.9;
 }
-main .center .knownfrinds .people{
+
+main .center .knownfrinds .people {
     width: 150px;
     height: 250px;
-   
+
     border-radius: 10px;
     box-shadow: 1px 1px 2px 1px rgb(197, 197, 197);
     margin-bottom: 10px;
 }
-main .center .knownfrinds .people img{
+
+main .center .knownfrinds .people .name {
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+main .center .knownfrinds .people img {
     width: 100%;
 }
-main .right{
+
+main .center .knownfrinds .people .mutual-friends {
+    display: flex;
+    margin-top: 7px;
+}
+
+main .center .knownfrinds .people .mutual-friends img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+main .center .knownfrinds .people .mutual-friends p {
+    font-size: 15px;
+}
+
+main .center .knownfrinds .people .requist-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 30px;
+    margin: 8px;
+    background-color: #c4e0f6;
+    border-radius: 5px;
+}
+
+main .center .knownfrinds .people .requist-btn p {
+    font-weight: 100;
+    color: #036bba;
+}
+
+main .right {
     width: 22%;
     margin-top: 65px;
     position: fixed;
@@ -452,49 +583,67 @@ main .right{
     overflow-y: scroll;
     height: 92vh
 }
-main .right::-webkit-scrollbar{
+
+main .right::-webkit-scrollbar {
     width: 7px;
 }
-main .right::-webkit-scrollbar-thumb{
-border-radius: 20px;
-background-color: #f5f5f5;
+
+main .right::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #f5f5f5;
 }
-main .right:hover::-webkit-scrollbar-thumb{
+
+main .right:hover::-webkit-scrollbar-thumb {
     background-color: #cccccc;
 }
-main .right .brithday{
+
+main .right .brithday {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 10px;
 }
+
 main .right .brithday img {
     margin-right: 10px;
 }
-main .right .contacts-head{
+
+main .right .contacts-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5px 10px 10px 5px;
 }
-main .right .contact{
+
+main .right .contacts-head i {
+    color: #8d8e8f;
+}
+
+main .right .contact {
     display: flex;
     align-items: center;
     justify-content: start;
-    
+
     padding: 8px;
 }
-main .right .contact:hover{
+
+main .right .contact i {
+    color: #0d9d0b;
+}
+
+main .right .contact:hover {
     background-color: #e1e1e1;
     border-radius: 8px;
 }
-main .right .contact img{
+
+main .right .contact img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: 1px solid rgb(109, 108, 108);
 }
-main .right .contact strong{
+
+main .right .contact strong {
     color: rgb(9, 156, 9);
     position: relative;
     top: 6px;
@@ -504,13 +653,14 @@ main .right .contact strong{
     border: 2px solid white;
 }
 
-main .right .group-creation{
+main .right .group-creation {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-main .right .group-creation div{
+
+main .right .group-creation div {
     background-color: #e1e1e1;
     padding: 10px;
     border-radius: 50%;
